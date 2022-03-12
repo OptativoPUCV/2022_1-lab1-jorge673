@@ -59,7 +59,11 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   return NULL;
+   
+   Persona *sujeto=NULL;
+   sujeto->edad=edad;
+   
+   return sujeto;
 }
 
 /*

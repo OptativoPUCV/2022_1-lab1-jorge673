@@ -117,3 +117,14 @@ exercises.c:71:1: error: control reaches end of non-void function [-Werror=retur
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5ecfdd8
+Sat Mar 12 16:21:29 HSP 2022: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:63:25: error: unused variable 'aux' [-Werror=unused-variable]
+    Persona *sujeto=NULL,aux;
+                         ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+741af4e

@@ -265,3 +265,13 @@ exercises.c:70:16: error: assignment makes integer from pointer without a cast [
 cc1.exe: all warnings being treated as errors
 Compilation failed
 bb6ca1b
+Sat Mar 12 16:46:06 HSP 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:69:18: error: assignment to expression with array type
+    sujeto->nombre='a';
+                  ^
+Compilation failed
+bcc7af7

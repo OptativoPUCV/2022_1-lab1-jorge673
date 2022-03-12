@@ -120,7 +120,7 @@ Ejercicio 7.
 Función que suma los vectores `a` y `b` y 
 actualiza el vector `c` con el resultado de la suma.
 */
-void sumaV(Vector * a, Vector * b, Vector * c) {//no se si todos van ser del mismo tamaño,voy a deducir que si
+void sumaV(Vector * a, Vector * b, Vector * c) {
    int talla=c->capacidad;
 
    for(int i=0;i<talla;i++){
@@ -135,4 +135,6 @@ sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
 
+   c->datos[0]=a1+b1;
+   c->datos[1]=a2+b2;
 }

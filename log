@@ -160,3 +160,18 @@ Sat Mar 12 16:28:23 HSP 2022:
  1 file changed, 4 insertions(+), 2 deletions(-)
  tests:  0|0
 f63e062
+Sat Mar 12 16:35:24 HSP 2022: 
+ exercises.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:69:12: error: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+    strcpy( sujeto->edad,rut);
+            ^~~~~~
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'char *' but argument is of type 'int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+32f254d

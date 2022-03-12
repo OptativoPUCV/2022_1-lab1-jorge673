@@ -100,3 +100,20 @@ Sat Mar 12 16:16:26 HSP 2022:
  tests:  2|5
 total_score: 20/70
 448057a
+Sat Mar 12 16:17:46 HSP 2022: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:70:11: error: incompatible types when returning type 'Persona {aka struct <anonymous>}' but 'Persona * {aka struct <anonymous> *}' was expected
+    return aux;
+           ^~~
+exercises.c:63:13: error: unused variable 'sujeto' [-Werror=unused-variable]
+    Persona *sujeto=NULL,aux;
+             ^~~~~~
+exercises.c:71:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5ecfdd8

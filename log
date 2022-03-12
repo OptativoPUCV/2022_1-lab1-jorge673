@@ -94,3 +94,9 @@ Sat Mar 12 16:16:01 HSP 2022:
  1 file changed, 5 insertions(+), 4 deletions(-)
  tests:  0|0
 7e857ca
+Sat Mar 12 16:16:26 HSP 2022: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  2|5
+total_score: 20/70
+448057a

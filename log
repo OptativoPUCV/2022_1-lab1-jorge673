@@ -144,3 +144,14 @@ Sat Mar 12 16:24:36 HSP 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 c05edb4
+Sat Mar 12 16:27:20 HSP 2022: 
+ exercises.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:69:11: error: function returns address of local variable [-Werror=return-local-addr]
+    return &sujeto;
+           ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ed3109a

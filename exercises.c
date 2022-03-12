@@ -65,9 +65,6 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
    sujeto=(Persona*)malloc(sizeof(Persona));
 
    sujeto->edad=edad;
-   
-   sujeto->nombre='a';
-   sujeto->edad='a';
 
    return sujeto;
 }

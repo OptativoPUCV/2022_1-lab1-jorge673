@@ -206,3 +206,18 @@ c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is o
 cc1.exe: all warnings being treated as errors
 Compilation failed
 bb1315c
+Sat Mar 12 16:44:19 HSP 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:70:11: error: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+    strcpy(sujeto[0].edad,rut);
+           ^~~~~~
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'char *' but argument is of type 'int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+eca0921

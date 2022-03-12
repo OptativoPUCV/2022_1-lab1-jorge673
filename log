@@ -63,3 +63,29 @@ Sat Mar 12 16:05:45 HSP 2022:
  1 file changed, 3 insertions(+)
  tests:  0|0
 f1c117d
+Sat Mar 12 16:12:29 HSP 2022: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:64:16: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+    sujeto->edad=&edad;
+                ^
+exercises.c:66:26: error: passing argument 2 of 'strcpy' from incompatible pointer type [-Werror=incompatible-pointer-types]
+    strcpy(sujeto->nombre,&nombre);
+                          ^
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'char **'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+In file included from test.c:5:0:
+exercises.c:67:23: error: passing argument 2 of 'strcpy' from incompatible pointer type [-Werror=incompatible-pointer-types]
+    strcpy(sujeto->rut,&rut);
+                       ^
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'char **'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5d8f694

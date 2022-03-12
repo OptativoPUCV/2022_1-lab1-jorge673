@@ -139,3 +139,8 @@ exercises.c:69:8: error: 'ptr' is used uninitialized in this function [-Werror=u
 cc1.exe: all warnings being treated as errors
 Compilation failed
 14002e3
+Sat Mar 12 16:24:36 HSP 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+c05edb4

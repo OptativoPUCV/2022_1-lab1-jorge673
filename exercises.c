@@ -60,7 +60,7 @@ typedef struct {
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
    
-   Persona *ptr,sujeto;
+   Persona *ptr=NULL,sujeto;
    sujeto.edad=edad;
    
    strcpy( sujeto.nombre,nombre);
